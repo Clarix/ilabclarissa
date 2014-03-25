@@ -1,0 +1,100 @@
+Welcome to Git (version 1.9.0-preview20140217)
+
+
+Run 'git help git' to display the help index.
+Run 'git help <command>' to display help for specific commands.
+
+ILAB34@PC-ILAB34 ~
+$ git config --global user.name "clarix"
+
+ILAB34@PC-ILAB34 ~
+$ git config --global user.email clarissa.cerdan@gmail.com
+
+ILAB34@PC-ILAB34 ~
+$ cd desktop
+
+ILAB34@PC-ILAB34 ~/desktop
+$ cd ilabclarissa/
+
+ILAB34@PC-ILAB34 ~/desktop/ilabclarissa (master)
+$ git init
+Reinitialized existing Git repository in c:/Users/ILAB34/desktop/ilabclarissa/.g
+it/
+
+ILAB34@PC-ILAB34 ~/desktop/ilabclarissa (master)
+$ touch HolaMundo.txt
+
+ILAB34@PC-ILAB34 ~/desktop/ilabclarissa (master)
+$ git add HolaMundo.txt
+
+ILAB34@PC-ILAB34 ~/desktop/ilabclarissa (master)
+$ git commit -m "mi primer commit hola mundo"
+[master (root-commit) df48769] mi primer commit hola mundo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 HolaMundo.txt
+
+ILAB34@PC-ILAB34 ~/desktop/ilabclarissa (master)
+$ git remote add origin https://github.com/Clarix/ilabclarissa.git
+
+ILAB34@PC-ILAB34 ~/desktop/ilabclarissa (master)
+$ git push -u origin master
+Username for 'https://github.com': clarix
+Password for 'https://clarix@github.com':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/Clarix/ilabclarissa.git/'
+
+ILAB34@PC-ILAB34 ~/desktop/ilabclarissa (master)
+$ git push -u origin master
+Username for 'https://github.com': clarix
+Password for 'https://clarix@github.com':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/Clarix/ilabclarissa.git/'
+
+ILAB34@PC-ILAB34 ~/desktop/ilabclarissa (master)
+$ git push -u origin master
+Username for 'https://github.com': clarix
+Password for 'https://clarix@github.com':
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 225 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Clarix/ilabclarissa.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+ILAB34@PC-ILAB34 ~/desktop/ilabclarissa (master)
+$ vi holamundo.txt
+
+ILAB34@PC-ILAB34 ~/desktop/ilabclarissa (master)
+$ git add holamundo.txt
+
+ILAB34@PC-ILAB34 ~/desktop/ilabclarissa (master)
+$ git commit -m "actualizacion a Hola mundo"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   HolaMundo.txt
+
+no changes added to commit
+
+ILAB34@PC-ILAB34 ~/desktop/ilabclarissa (master)
+$ git add HolaMundo.txt
+
+ILAB34@PC-ILAB34 ~/desktop/ilabclarissa (master)
+$ git commit -m "actualizacion a Hola Mundo"
+[master 5b0fce2] actualizacion a Hola Mundo
+ 1 file changed, 2 insertions(+)
+
+ILAB34@PC-ILAB34 ~/desktop/ilabclarissa (master)
+$ git push -u origin master
+Username for 'https://github.com': clarix
+Password for 'https://clarix@github.com':
+Counting objects: 5, done.
+Writing objects: 100% (3/3), 303 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Clarix/ilabclarissa.git
+   df48769..5b0fce2  master -> master
+Branch master set up to track remote branch master from origin.
+
+ILAB34@PC-ILAB34 ~/desktop/ilabclarissa (master)
+$
